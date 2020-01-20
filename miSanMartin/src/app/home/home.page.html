@@ -11,5 +11,12 @@
 
 
 <ion-content>
-
+   
+  <ion-slides pager="true" [options]="slideOptsOne" >
+    <ion-slide *ngFor="let item of featured">
+        <div class="container">
+            <ion-img src="{{item.picture}}"></ion-img>
+        </div>
+    </ion-slide>
+  </ion-slides>
 </ion-content>
