@@ -1,0 +1,14 @@
+<ion-content>
+    <ion-slides [options]="slideOptsThumbs">
+        <ion-slide *ngFor="let item of cards">
+          <ion-card class="ion-text-start">
+            <ion-icon name="share"></ion-icon>
+            <ion-icon name="heart"></ion-icon>
+            <img src={{item.picture}}>
+            <ion-card-content>
+             {{item.descripcion}}-{{item.porcentaje}}
+            </ion-card-content>
+          </ion-card>
+        </ion-slide>
+    </ion-slides>
+</ion-content>

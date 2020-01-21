@@ -4,7 +4,9 @@ import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
+
 import { HomePage } from './home.page';
+import { HomeDetallePage } from '../home-detalle/home-detalle.page';
 
 @NgModule({
   imports: [
@@ -18,6 +20,9 @@ import { HomePage } from './home.page';
       }
     ])
   ],
-  declarations: [HomePage]
+  declarations: [
+    HomePage,
+    HomeDetallePage
+  ]
 })
 export class HomePageModule {}
