@@ -23,6 +23,10 @@ const routes: Routes = [
     path: 'destacados',
     loadChildren: () => import('./destacados/destacados.module').then( m => m.DestacadosPageModule)
   },
+  {
+    path: 'home2',
+    loadChildren: () => import('./home2/home2.module').then( m => m.Home2PageModule)
+  },
 
 ];
 

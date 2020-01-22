@@ -8,6 +8,7 @@ import { RouterModule } from '@angular/router';
 import { HomePage } from './home.page';
 import { HomeDetallePage } from '../home-detalle/home-detalle.page';
 import { DestacadosPage } from '../destacados/destacados.page';
+import { Home2Page } from '../home2/home2.page';
 
 @NgModule({
   imports: [
@@ -24,7 +25,8 @@ import { DestacadosPage } from '../destacados/destacados.page';
   declarations: [
     HomePage,
     HomeDetallePage,
-    DestacadosPage
+    DestacadosPage,
+    Home2Page
   ]
 })
 export class HomePageModule {}
