@@ -2,7 +2,7 @@
     <ion-slides [options]="slideOptsThumbs">
         <ion-slide *ngFor="let item of cards">
           <ion-card class="ion-text-start">
-            <ion-icon name="share"></ion-icon>
+            <ion-icon name="share" (click)="sendShare(item.descripcion, item.porcentaje, 'https://ionicframework.com/docs')"></ion-icon>
             <ion-icon name="heart"></ion-icon>
             <img src={{item.picture}}>
             <ion-card-content>

@@ -1,5 +1,7 @@
 {
   "name": "miSanMartin",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

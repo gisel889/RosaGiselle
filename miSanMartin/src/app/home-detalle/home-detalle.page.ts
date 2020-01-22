@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SocialSharing } from '@ionic-native/social-sharing/ngx';
 
 @Component({
   selector: 'app-home-detalle',
@@ -12,7 +13,7 @@ export class HomeDetallePage implements OnInit {
     slidesPerView: 2.65,
   };
 
-  constructor() {   
+  constructor(private socialSharing: SocialSharing) {   
     this.cards = [
       {
         picture: "https://placem.at/people?overlay_color=feb75a&w=500&h=300",
@@ -30,6 +31,10 @@ export class HomeDetallePage implements OnInit {
         porcentaje: "10%"}
     ];
   }
+  sendShare(message, subject, url) {
+    debugger;
+    this.socialSharing.share(message, subject, null, url);
+  } 
 
   ngOnInit() {
   }
