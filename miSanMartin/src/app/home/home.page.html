@@ -6,21 +6,34 @@
     <ion-title>
      <img src="../../assets/icon/logoSanMartin.png" style="margin-left: auto"/> 
     </ion-title>
+ 
+ </ion-toolbar>
+
+ <ion-toolbar>
+    <ion-segment [(ngModel)]="segment">
+        <ion-segment-button value="destacados">
+          Destacados
+        </ion-segment-button>
+        <ion-segment-button value="rubros">
+          Rubros
+        </ion-segment-button>
+      </ion-segment>
   </ion-toolbar>
 </ion-header>
+ 
+<ion-content [ngSwitch]="segment">
 
+    <app-destacados *ngSwitchCase="'destacados'"></app-destacados>
 
-<ion-content>
-   
-  <ion-slides pager="true" [options]="slideOptsOne" >
+  <!-- <ion-slides pager="true" [options]="slideOptsOne" >
     <ion-slide *ngFor="let item of featured">
         <div class="container">
             <ion-img src="{{item.picture}}"></ion-img>
         </div>
     </ion-slide>
-  </ion-slides>
+  </ion-slides> -->
    <!-- Aca deberia de ir el buscador de Google -->
 
-  <app-home-detalle></app-home-detalle>
+  <!-- <app-home-detalle></app-home-detalle> -->
 
 </ion-content>

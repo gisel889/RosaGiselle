@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'home-detalle',
     loadChildren: () => import('./home-detalle/home-detalle.module').then( m => m.HomeDetallePageModule)
   },
+  {
+    path: 'destacados',
+    loadChildren: () => import('./destacados/destacados.module').then( m => m.DestacadosPageModule)
+  },
 
 ];
 
